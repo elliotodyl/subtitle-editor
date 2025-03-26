@@ -1,0 +1,19 @@
+/**
+ * For more details on how to configure Wrangler, refer to:
+ * https://developers.cloudflare.com/workers/wrangler/configuration/
+ */
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"main": ".open-next/worker.js",
+	"name": "subtitle-editor",
+	"compatibility_date": "2025-02-14",
+	"compatibility_flags": ["nodejs_compat"],
+	"minify": true,
+	"assets": {
+		"binding": "ASSETS",
+		"directory": ".open-next/assets",
+	},
+	"observability": {
+		"enabled": true,
+	},
+}
