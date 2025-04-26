@@ -4,7 +4,6 @@ export function secondsToTimestampSRT(timeInSeconds: number): string {
 	const seconds = Math.floor(timeInSeconds % 60);
 	const milliseconds = Math.round((timeInSeconds % 1) * 1000);
 
-	// 格式化时间
 	const formattedHours = String(hours).padStart(2, "0");
 	const formattedMinutes = String(minutes).padStart(2, "0");
 	const formattedSeconds = String(seconds).padStart(2, "0");
@@ -19,7 +18,6 @@ export function secondsToTimestampVTT(timeInSeconds: number): string {
 	const seconds = Math.floor(timeInSeconds % 60);
 	const milliseconds = Math.round((timeInSeconds % 1) * 1000);
 
-	// 格式化时间
 	const formattedHours = String(hours).padStart(2, "0");
 	const formattedMinutes = String(minutes).padStart(2, "0");
 	const formattedSeconds = String(seconds).padStart(2, "0");
